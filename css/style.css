@@ -1,0 +1,157 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	font-size: 18px;
+	font-family: 'Roboto', sans-serif;
+	background: #5b79ba;
+	color: #fff;
+}
+
+header .module{
+	width: 100%;
+}
+
+main {
+	display: grid;
+	grid-template-columns: 1fr;
+	align-items: center;
+}
+
+nav {
+	font-size: 1.2em;
+	display: block;
+	border-radius: 5px;
+	background: #9379a6;
+	padding: 10px;
+	text-align: center;
+	border-right: 2px groove black;
+	grid-column: 1;
+}
+
+nav h2{
+	font-size: 1.5em;
+	font-weight: 700;
+	margin-left: 10px;
+	text-decoration: underline;
+	margin: 10px 0 15px 5px;
+}
+
+ul{
+	list-style-type: none;
+	line-height: 2;
+}
+
+a{
+	font-size: 1.1em;
+	text-decoration: none;
+	color: #fff;
+}
+
+a:hover{
+	text-decoration: underline;
+	font-weight: 700;
+}
+
+section{
+	padding: 10px 15px;
+}
+.intro{
+	border-bottom: 2px dashed black;
+	text-align: justify;
+	
+}
+section p{
+	line-height: 1.5em;
+}
+section h2{
+	font-size: 2em;
+	text-decoration: underline;
+	margin-bottom: 20px;
+}
+section .t2{
+	text-align: center;
+}
+.img{
+	float: left;
+	margin: 0 10px 0 0;
+}
+section li{
+	text-align: center;
+	margin-bottom: 5px;
+}
+.calender{
+	margin-bottom: 30px;
+}
+aside {
+	margin-left: 0.5rem;
+	display: flex;
+	justify-content: space-evenly
+
+
+}
+aside .ads{
+	border:1px groove black;
+	border-radius: 10px;
+	width: 190px;
+	margin-bottom: 15px;
+	padding: 10px 15px;
+	line-height: 1.5em;
+	background: #2b2c78;
+	box-shadow: 5px 6px 0 #b8b9ff;
+	
+}
+aside .ads1{
+	margin-bottom: 125px;
+}
+aside .ads h3{
+	text-decoration: underline;
+	font-size: 1.5em;
+	margin-bottom: 5px;
+	text-transform: uppercase;
+
+
+}
+aside .ads .mail{
+	color: white;
+	font-size: 20px;
+}
+.ads p{
+	font-size: 20px;
+}
+aside .ads .e2c{
+	color: red;
+}
+
+.dan{
+	display: flex;
+	justify-content: space-around;
+	margin: 3rem 1rem 0 1rem;
+
+}
+footer .foot{
+	color: #000;
+	padding: 1rem 0;
+	text-align: right;
+	background: #D4DBF5;
+	width: 100%;
+}
+@media (min-width: 768px){
+	main{
+		grid-template-columns: repeat(4, 1fr);
+	}
+	nav {
+		grid-column: 1;
+		margin-left: 10rem;
+
+	}
+	section{
+		grid-column: 2 / 4;
+	}
+	aside {
+		grid-column: 4 / 4;
+		flex-direction: column;
+
+	}
+} 
